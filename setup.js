@@ -651,8 +651,8 @@ try {
     console.log(error);
     let promptFormats = { 
         default: {
-            system: "<|im_start|>",
-            prependPrompt: "system",
+            system: "<|im_start|>system\n",
+            prependPrompt: "",
             postPrompt: "",
             memoryStart: "",
             memoryPost: "<|im_end|>\n<|im_start|>user\n",
@@ -660,8 +660,8 @@ try {
             responseStart: "",
         },
        chatML: {
-            system: "<|im_start|>",
-            prependPrompt: "system",
+            system: "<|im_start|>system\n",
+            prependPrompt: "",
             postPrompt: "",
             memoryStart: "",
             memoryPost: "<|im_end|>\n<|im_start|>user\n",
