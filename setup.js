@@ -650,21 +650,21 @@ try {
     console.log(error);
     let promptFormats = { 
         default: {
-            system: "<|im_start|> ",
-            prependPrompt: "",
+            system: "<|im_start|>",
+            prependPrompt: "system",
             postPrompt: "",
             memoryStart: "",
-            memoryPost: "<|im_end|>\n<|im_start|>user:\n ",
-            finalprompt: "<|im_end|>\n<|im_start|>assistant:\n",
+            memoryPost: "<|im_end|>\n<|im_start|>user\n",
+            finalprompt: "<|im_end|>\n<|im_start|>assistant\n",
             responseStart: "",
         },
        chatML: {
             system: "<|im_start|>",
-            prependPrompt: "system ",
+            prependPrompt: "system",
             postPrompt: "",
             memoryStart: "",
-            memoryPost: "<|im_end|>\n<|im_start|>user:\n ",
-            finalprompt: "<|im_end|>\n<|im_start|>assistant:\n",
+            memoryPost: "<|im_end|>\n<|im_start|>user\n",
+            finalprompt: "<|im_end|>\n<|im_start|>assistant\n",
             responseStart: "",
         },
         alpaca:{
